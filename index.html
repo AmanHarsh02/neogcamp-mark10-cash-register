@@ -13,16 +13,19 @@
         <h1 class="heading">Cash Register Manager</h1>
         <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
 
-        <label for="bill-amount">Bill Amount:</label>
-        <input type="text" id="bill-amount">
-        <label for="cash-given">Cash Given:</label>
-        <input type="text" id="cash-given">
+        <label for="bill-amount" class="label">Bill Amount:</label>
+        <input type="number" id="bill-amount">
+        <label for="cash-given" class="label">Cash Given:</label>
+        <input type="number" id="cash-given">
 
         <button id="check-btn">Check</button>
 
-        <h3>Return Change</h3>
+        <p id="error-msg" style="display: none"></p>
 
         <table class="notes-table">
+
+            <caption>Return Change</caption>
+
             <tr class="note-count">
                 <th>No. of Notes</th>
                 <td class="no-of-notes"></td>
@@ -45,6 +48,29 @@
             </tr>
         </table>
     </div>
+
+    <footer class="footer">
+        <p>If you enjoyed this cash register manager, check out my other projects too! <a class="link" href="https://amanharsh.netlify.app/projects.html" target="_blank">Click here</a> to see my other projects.</p>
+
+        <div class="footer-header">Connect to me on my socials</div>
+        <ul>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://github.com/AmanHarsh02" target="_blank">
+                    GitHub
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://linkedin.com/in/aman-harsh" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://twitter.com/amanharsh0203" target="_blank">
+                    Twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="/app.js" type="text/javascript"></script>
 </body>
