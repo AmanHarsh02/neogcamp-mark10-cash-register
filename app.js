@@ -13,7 +13,7 @@ function validateBillAmountAndCashGiven() {
 
     if (Number(billAmount.value) <= 0) {
         showErrorMessage("Invalid Bill Amount");
-    } else if (Number(cashGiven.value) <= Number(billAmount.value)) {
+    } else if (Number(cashGiven.value) < Number(billAmount.value)) {
 
         cashGivenLabel.style.display = "block";
         cashGiven.style.display = "block";
