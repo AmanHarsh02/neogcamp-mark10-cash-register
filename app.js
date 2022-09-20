@@ -20,6 +20,8 @@ function validateBillAmountAndCashGiven() {
         notesTable.style.display = "table";
 
         showErrorMessage("Cash given should be greater than the bill amount.");
+    } else if(Number(cashGiven.value) === Number(billAmount.value)) {
+        showErrorMessage("Bill has been paid.")
     } else {
         const amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
 
